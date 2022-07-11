@@ -17,11 +17,11 @@ def main():
     search_file = open(args.fname)
     line_num = 0
     for line in search_file.readlines():
-        line = line.strip('\n\r')
+        line = line.strip('\n\r').strip()
         line_num += 1
         search_result = re.search(args.word, line, re.M | re.I)
         if search_result:
-            print('{}: {}'.format(line_num, line))
+            print('{}:\t{}'.format(line_num, line))
 
 
 if __name__ == '__main__':
