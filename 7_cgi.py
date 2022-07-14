@@ -12,6 +12,9 @@ DocumentRoot /var/www
         allow from all
         AddHandler cgi-script .py
 </Directory>
+
+Put this script in /var/www
+GET on http://IP/7_cgi.py
 """
 
 
