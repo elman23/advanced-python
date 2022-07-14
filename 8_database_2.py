@@ -6,8 +6,6 @@
 
 import sqlite3
 
-from itsdangerous import exc
-
 
 def main():
     try:
